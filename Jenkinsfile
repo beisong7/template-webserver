@@ -8,6 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'building app'
+                sh "pwd"
+                sh "ls"
             }
         }
         
