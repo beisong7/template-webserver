@@ -10,6 +10,8 @@ pipeline {
                 echo 'building app'
                 sh "pwd"
                 sh "ls"
+                sh "zip -r webapp.zip ."
+                sh "ls"
             }
         }
         
