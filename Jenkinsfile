@@ -33,6 +33,9 @@ pipeline {
             steps {
                 echo 'Remove existing files'
                 deleteDir()
+                sshagent(['server-key']) {
+                     sh '$CONNECT "rm webapp.zip"'
+                }
             }
         }
     }
